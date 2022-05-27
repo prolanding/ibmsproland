@@ -2,6 +2,7 @@
 const express = require("express"); 
 const app = express();
 const signuprouter = require("./src/routes/signuprouter");
+//const loginrouter = require("./src/routes/loginrouter");
 
 
 //4
@@ -13,8 +14,11 @@ app.set('views','./src/views');
 app.get("/",(req,res)=>{
  res.render('index');
 });
+app.get("/login",(req,res)=>{
+ res.render('login');
+});
 
-app.use("/login",loginrout);
+//app.use("/login",loginrouter);
 app.use("/signup",signuprouter);
 
 //app.use("/verification",validationRouter);
