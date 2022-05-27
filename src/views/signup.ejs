@@ -6,12 +6,12 @@
 		<title>Storystrap Template</title>
 		<meta name="generator" content="Bootply" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
 		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
 		<!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<link href="css/styles.css" rel="stylesheet">
+		<link href="/css/styles.css" rel="stylesheet">
 	</head>
 	<body>
 <header class="navbar navbar-bright navbar-fixed-top" role="banner">
@@ -98,21 +98,26 @@
           <!--/stories-->
           <div class="row">    
             <br>
-            <form action="/action_page.php">
-              <label for="fname">Username:</label><br>
-              <input type="text" id="uname" name="username" ><br>
-              <label for="fname">Address</label><br>
-              <input type="text" id="ads" name="password" ><br>
-              <label for="fname">Phone Number</label><br>
-              <input type="text" id="pn" name="phone number" ><br>
-              <label for="fname">Gmail</label><br>
-              <input type="text" id="gm" name="gmail" ><br>
-
-
-              <label for="lname">Password:</label><br>
+            <form method = "GET" action="/signup/add">
+              
+              Username<br>
+              <input type="text" name="uname" ><br>
+              
+              Address<br>
+              <input type="text" name="ads" ><br>
+              
+              Phone Number<br>
+              <input type="text" name="pn" ><br>
+              
+              Gmail<br>
+              <input type="text" name="gm" ><br>
+              
+              Password:<br>
               <input type="password" id="pwd" name="pwd" ><br>
-              <label for="lname">Confirm Password:</label><br>
-              <input type="password" id="pwd" name="pwd" ><br><br>
+              
+              Confirm Password:<br>
+              <input type="password" id="pwds" name="pwds" ><br><br>
+              
               <input type="submit" value="Submit">
             </form> 
             
@@ -180,6 +185,6 @@
 </footer>
 	<!-- script references -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
 	</body>
 </html>
